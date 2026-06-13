@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Discus Giants">
+  <rect width="512" height="512" rx="96" fill="#08121d"/>
+  <circle cx="258" cy="256" r="156" fill="#0f9f9a" opacity=".18"/>
+  <path d="M121 257c48-76 116-114 202-114 40 0 75 13 105 38-28 38-63 67-106 87 33 17 63 39 88 67-26 22-58 34-97 34-82 0-146-37-192-112Z" fill="#f8fafc"/>
+  <path d="M132 257c36 48 88 72 154 72 30 0 59-6 87-17-22-18-45-32-71-43l-34-15 34-15c28-12 53-29 75-51-18-8-37-12-57-12-75 0-138 27-188 81Z" fill="#d8a431"/>
+  <circle cx="337" cy="222" r="12" fill="#08121d"/>
+  <path d="M175 188c-12 46-12 92 0 138M218 170c-15 57-15 114 0 171M262 164c-16 62-16 124 0 186" stroke="#08121d" stroke-width="18" stroke-linecap="round" opacity=".65"/>
+  <text x="256" y="446" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#f8fafc">DG</text>
+</svg>

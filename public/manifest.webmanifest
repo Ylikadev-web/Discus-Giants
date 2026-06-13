@@ -1,0 +1,18 @@
+{
+  "name": "Discus Giants ERP",
+  "short_name": "DG ERP",
+  "description": "Inventario, cotizaciones, pedidos y proximos ejemplares de Discus Giants.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f7fb",
+  "theme_color": "#08121d",
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
