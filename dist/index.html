@@ -4,11 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#08121d" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="icon" type="image/svg+xml" href="/app-icon.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./app-icon.svg" />
     <title>Discus Giants ERP</title>
-    <script type="module" crossorigin src="/assets/index-BnNxujUw.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DcGbUooN.css">
+    <script>
+      (function () {
+        function loadStatic() {
+          if (!document.querySelector('link[data-bundle-css]')) {
+            var css = document.createElement("link");
+            css.rel = "stylesheet";
+            css.href = "./bundle.css";
+            css.setAttribute("data-bundle-css", "true");
+            document.head.appendChild(css);
+          }
+          var script = document.createElement("script");
+          script.type = "module";
+          script.src = "./bundle.js";
+          document.head.appendChild(script);
+        }
+
+        var localHost =
+          location.hostname === "localhost" ||
+          location.hostname === "127.0.0.1" ||
+          location.hostname === "::1";
+        if (localHost) {
+          var source = document.createElement("script");
+          source.type = "module";
+          source.src = "./src/main.jsx";
+          source.addEventListener("error", loadStatic, { once: true });
+          document.head.appendChild(source);
+        } else {
+          loadStatic();
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

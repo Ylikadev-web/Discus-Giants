@@ -85,7 +85,7 @@ function pathLabel(path) {
 }
 
 function firstImage(item) {
-  return item?.photos?.[0]?.dataUrl || item?.imageUrl || item?.images?.[0] || "/app-icon.svg";
+  return item?.photos?.[0]?.dataUrl || item?.imageUrl || item?.images?.[0] || "./app-icon.svg";
 }
 
 function quoteTotal(items = []) {
@@ -539,7 +539,7 @@ export default function App() {
     <div className="app-shell">
       <aside className="sidebar">
         <div className="brand">
-          <img src="/app-icon.svg" alt="DG" />
+          <img src="./app-icon.svg" alt="DG" />
           <div>
             <strong>Discus Giants</strong>
             <span>ERP ligero</span>

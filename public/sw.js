@@ -1,5 +1,5 @@
 const CACHE_NAME = "discus-giants-erp-v1";
-const APP_SHELL = ["/", "/index.html", "/manifest.webmanifest", "/app-icon.svg"];
+const APP_SHELL = ["./", "./index.html", "./manifest.webmanifest", "./app-icon.svg", "./bundle.js", "./bundle.css"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

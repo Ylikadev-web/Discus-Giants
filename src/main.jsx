@@ -9,8 +9,10 @@ createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-if ("serviceWorker" in navigator) {
+const isStaticBuild = new URL(import.meta.url).pathname.endsWith("/bundle.js");
+
+if ("serviceWorker" in navigator && isStaticBuild && window.location.protocol !== "file:") {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js").catch(() => {});
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
   });
 }

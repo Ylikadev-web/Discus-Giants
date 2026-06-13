@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "vite build",
+    "build": "node scripts/build-static.mjs",
+    "build:vite": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "scrape:catalog": "node scripts/scrape-odoo.mjs"
   },
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.2",
     "cheerio": "^1.2.0",
+    "esbuild": "^0.28.1",
     "vite": "^8.0.16"
   }
 }
